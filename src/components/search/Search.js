@@ -24,7 +24,7 @@ const Search = () => {
 		const { titleOrId, search, year, type } = values;
 
 		const response = await fetch(
-			`http://www.omdbapi.com/?i=${titleOrId}&s=${search}&y=${year}&type=${type}&apikey=8b4e12f4`
+			`https://www.omdbapi.com/?i=${titleOrId}&s=${search}&y=${year}&type=${type}&apikey=8b4e12f4`
 		);
 		const data = await response.json();
 
